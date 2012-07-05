@@ -16,7 +16,10 @@
 
 package com.cotdp.hadoop;
 
-public interface ContextWriter<K,V>
+/**
+ * Noddy method for writing Key/Value pairs out to non-Hadoop classes.
+ */
+public interface ContextWriter<K, V>
 {
-	public void write(K key, V value);
+    public void write( K key, V value );
 }
